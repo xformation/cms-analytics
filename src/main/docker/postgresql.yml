@@ -1,0 +1,11 @@
+version: '2'
+services:
+  analytics-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/analytics/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=analytics
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
